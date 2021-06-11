@@ -4,6 +4,6 @@
 
 **Nome del Progetto** : HcTracs;<br>
 **Membri/Creatori del progetto** : Mario Oliva, Vittorio Piscitelli e Salvatore Mancini;<br>
-**Tecnologie usate** : java script e css (lato client);<br>
+**Tecnologie usate** : HTML5, java script e css (lato client);<br>
 
 **Per provare il progetto bisogna avviarlo in locale sulla propria macchina, è consigliato usare come web browser Google Chrome o Microsoft Edge**;<br>
