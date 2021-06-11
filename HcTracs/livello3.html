@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./images/Favicon.ico">
+  <title>Level 3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="white"/>
+</head>
+<body background="./images/img_1621450247159.jpg">
+
+<h3 class="traccia"> EATING PLANE </h3>
+<div id="btsugg" class="bt_sugg"> <a href="#" onclick="show()" ondblclick="hide()">?</a> </div>
+
+<div id="id_suggerimento" class="suggerimento" style="display: none;" onclick="hide()">
+  The if / then statement is a conditional statement that executes its sub-statement,
+  which follows the then keyword, only if the provided condition evaluates to true.<br>
+  Optionally, an else clause with a second sub-statement can be provided.
+  This second statement will be executed instead of the first one if the condition was false.
+  It is always guaranteed that one of the two statements will execute.
+</div>
+
+<div id='scritta_gameover' class="schermata_gameover" style="display: none;">
+
+  <div class="gameover">
+    <p> GAME OVER </p>
+  </div>
+
+  <div class="repeat_continue"> <p> REPEAT? </p> </div>
+
+  <div class="decision">
+    <div class="yes"> <a href="livello3.html"> YES </a> </div>
+    <div class="no"> <a href="home.html"> NO </a> </div>
+  </div>
+</div>
+
+<div id='scritta_winner' class="schermata_winner" style="display: none;">
+
+  <div class="winner">
+    <p>LEVEL COMPLETE</p>
+  </div>
+
+  <div class="repeat_continue"> <p> CONTINUE? </p> </div>
+
+  <div class="decision">
+    <div class="yes"> <a href="livello4.html"> YES </a> </div>
+    <div class="no"> <a href="home.html"> NO </a> </div>
+  </div>
+</div>
+
+
+
+<div class="parent">
+  <div class="origin">
+    <div id="pezzo_6" class="draggable" draggable="true" ondragstart="onDragStart(event);"> then go to seafood restaurant</div>
+    <div id="pezzo_4" class="draggable" draggable="true" ondragstart="onDragStart(event);"> then go to burgher restaurant</div>
+    <div id="pezzo_3" class="draggable" draggable="true" ondragstart="onDragStart(event);"> if burgher restaurant is open</div>
+    <div id="pezzo_7" class="draggable" draggable="true" ondragstart="onDragStart(event);"> else cook something at home</div>
+    <div id="pezzo_1" class="draggable" draggable="true" ondragstart="onDragStart(event);"> if pizza restaurant is open</div>
+    <div id="pezzo_5" class="draggable" draggable="true" ondragstart="onDragStart(event);"> if seafood restaurant is open</div>
+    <div id="pezzo_2" class="draggable" draggable="true" ondragstart="onDragStart(event);"> then go to pizza restaurant</div>
+  </div>
+  <div class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);"> dropzone </div>
+</div>
+
+<audio autoplay loop>
+  <source src="./music/Theme_Song.mp3" type="audio/mp3">
+</audio>
+
+<script src="js/Bottone_sugg.js"></script>
+<script src="js/Drag-Drop3.js"></script>
+</body>
+</html>

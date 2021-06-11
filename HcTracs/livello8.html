@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./images/Favicon.ico">
+    <title>Level 8</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="white"/>
+</head>
+<body background="./images/img_1621450247159.jpg">
+
+<h3 class="traccia6">SHOW THE MATRIX VALUE </h3>
+<div id="btsugg" class="bt_sugg"> <a href="#" onclick="show()" ondblclick="hide()">?</a> </div>
+
+<div id="id_suggerimento" class="suggerimento2" style="display: none;" onclick="hide()">
+    An array of arrays is known as 2D array. The two dimensional (2D) array in C programming is also known as matrix.
+    A matrix can be represented as a table of rows and columns.
+    Before we discuss more about two Dimensional array lets have a look at the following C program.
+</div>
+
+<div id='scritta_gameover' class="schermata_gameover2" style="display: none;">
+
+    <div class="gameover">
+        <p> GAME OVER </p>
+    </div>
+
+    <div class="repeat_continue"> <p> REPEAT? </p> </div>
+
+    <div class="decision">
+        <div class="yes"> <a href="livello8.html"> YES </a> </div>
+        <div class="no"> <a href="home.html"> NO </a> </div>
+    </div>
+</div>
+
+<div id='scritta_winner' class="schermata_winner2" style="display: none;">
+
+    <div class="winner">
+        <p> LEVEL COMPLETE </p>
+    </div>
+
+    <div class="repeat_continue"> <p> CONTINUE? </p> </div>
+
+    <div class="decision">
+        <div class="yes"> <a href="livello9.html"> YES </a> </div>
+        <div class="no"> <a href="home.html"> NO </a> </div>
+    </div>
+</div>
+
+
+
+<div class="parent">
+    <div class="origin">
+        <div id="pezzo_3" class="draggable" draggable="true" ondragstart="onDragStart(event);"> write the first cycle to move on the matrix's rows</div>
+        <div id="pezzo_7" class="draggable" draggable="true" ondragstart="onDragStart(event);"> close the first cycle</div>
+        <div id="pezzo_4" class="draggable" draggable="true" ondragstart="onDragStart(event);"> write the second cycle to move on the matrix's cols</div>
+        <div id="pezzo_5" class="draggable" draggable="true" ondragstart="onDragStart(event);"> print the value</div>
+        <div id="pezzo_1" class="draggable" draggable="true" ondragstart="onDragStart(event);"> declare the dimension of the matrix : rows=<input type="text" id="n1"/>, cols=<input type="text" id="n2"/> and the indexes for the cycle </div>
+        <div id="pezzo_6" class="draggable" draggable="true" ondragstart="onDragStart(event);"> close the second cycle</div>
+        <div id="pezzo_2" class="draggable" draggable="true" ondragstart="onDragStart(event);"> declare the matrix </div>
+    </div>
+    <div class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);"> dropzone </div>
+</div>
+<br>
+<div id="tabella_codice" class="tabella_codici">
+    <p style="font-size: x-large"> CODE : </p>
+    <br>
+    <div id="cp1" class="codici" > int rows=5,cols=6,i,j; </div>
+    <div id="cp2" class="codici" > int a[rows][cols];</div>
+    <div id="cp3" class="codici" > for(i=0;i< rows;i++){</div>
+    <div id="cp4" class="codici" >   for(j=0;j< cols;j++){</div>
+    <div id="cp5" class="codici" >      printf("%d",a[i][j]);</div>
+    <div id="cp6" class="codici" >  }</div>
+    <div id="cp7" class="codici" > }</div>
+</div>
+
+<audio autoplay loop>
+    <source src="./music/Theme_Song.mp3" type="audio/mp3">
+</audio>
+
+<script src="js/Bottone_sugg.js"></script>
+<script src="js/Drag-Drop8.js"></script>
+</body>
+</html>

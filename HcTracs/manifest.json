@@ -1,0 +1,9 @@
+{
+  "name": "HcTracs",
+  "short_name": "HcTracs",
+  "lang": "en-US",
+  "start_url": "home.html",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "white"
+}

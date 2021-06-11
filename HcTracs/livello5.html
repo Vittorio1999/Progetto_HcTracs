@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./images/Favicon.ico">
+    <title>Level 5</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="white"/>
+</head>
+
+
+<body background="./images/img_1621450247159.jpg">
+
+<h3 class="traccia5"> ASSOCIATE THE VARIABLES WITH THE CORRECT TYPE </h3>
+<div id="btsugg" class="bt_sugg"> <a href="#" onclick="show()" ondblclick="hide()">?</a> </div>
+
+<div id="id_suggerimento" class="suggerimento5" style="display: none;" onclick="hide()">
+    A variable is nothing but a name given to a storage area that our programs can manipulate.
+    Each variable in C has a specific type, which determines the size and layout of the variable's memory;
+    the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
+    The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore.
+    Upper and lowercase letters are distinct because C is case-sensitive.
+    Based on the basic types explained in the previous chapter, there will be the following basic variable types:<br>
+    Char : Typically a single octet(one byte). It is an integer type;<br>
+    Int : The most natural size of integer for the machine;<br>
+    Float : A single-precision floating point value;<br>
+
+
+</div>
+
+<div id='scritta_gameover' class="schermata_gameover2" style="display: none;">
+
+    <div class="gameover">
+        <p> GAME OVER </p>
+    </div>
+
+    <div class="repeat_continue"> <p> REPEAT? </p> </div>
+
+    <div class="decision">
+        <div class="yes"> <a href="livello5.html"> YES </a> </div>
+        <div class="no"> <a href="home.html"> NO </a> </div>
+    </div>
+</div>
+
+<div id='scritta_winner' class="schermata_winner2" style="display: none;">
+
+    <div class="winner">
+        <p> LEVEL COMPLETE </p>
+    </div>
+
+    <div class="repeat_continue"> <p> CONTINUE? </p> </div>
+
+    <div class="decision">
+        <div class="yes"> <a href="livello6.html"> YES </a> </div>
+        <div class="no"> <a href="home.html"> NO </a> </div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="origin">
+        <div id="pezzo_4" class="draggable" draggable="true" ondragstart="onDragStart(event);"> 4.3</div>
+        <div id="pezzo_1" class="draggable" draggable="true" ondragstart="onDragStart(event);"> Integer =</div>
+        <div id="pezzo_6" class="draggable" draggable="true" ondragstart="onDragStart(event);"> hello</div>
+        <div id="pezzo_3" class="draggable" draggable="true" ondragstart="onDragStart(event);"> Float =</div>
+        <div id="pezzo_5" class="draggable" draggable="true" ondragstart="onDragStart(event);"> String =</div>
+        <div id="pezzo_2" class="draggable" draggable="true" ondragstart="onDragStart(event);"> 5</div>
+    </div>
+    <div class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);"> dropzone </div>
+</div>
+<br>
+<div id="tabella_codice" class="tabella_codici">
+    <p style="font-size: x-large"> CODE : </p>
+    <br>
+</div>
+
+<audio autoplay loop>
+    <source src="./music/Theme_Song.mp3" type="audio/mp3">
+</audio>
+
+<script src="js/Bottone_sugg.js"></script>
+<script src="js/Drag-Drop5.js"></script>
+</body>
+</html>

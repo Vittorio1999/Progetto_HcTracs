@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./images/Favicon.ico">
+    <title>Level 4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="white"/>
+</head>
+
+
+<body background="./images/img_1621450247159.jpg">
+
+<h3 class="traccia"> NUMBER SUM </h3>
+<div id="btsugg" class="bt_sugg"> <a href="#" onclick="show()" ondblclick="hide()">?</a> </div>
+
+<div id="id_suggerimento" class="suggerimento2" style="display: none;" onclick="hide()">
+For calculate the sum in c, you need to use a cycle called for. The for take three argument:<br>
+    1. The initialization of the counter. That is the number that you want to start the cycle;<br>
+    2. The limit of the counter, that express the max number you can use;<br>
+    3. The increment or the decrement of the counter;<br>
+    In the sum you need to initialization the sum and ,in the cycle, you need to save the sum like sum= in this way the valor of the sum is not lose.
+</div>
+
+<div id='scritta_gameover' class="schermata_gameover2" style="display: none;">
+
+    <div class="gameover">
+        <p> GAME OVER </p>
+    </div>
+
+    <div class="repeat_continue"> <p> REPEAT? </p> </div>
+
+    <div class="decision">
+        <div class="yes"> <a href="livello4.html"> YES </a> </div>
+        <div class="no"> <a href="home.html"> NO </a> </div>
+    </div>
+</div>
+
+<div id='scritta_winner' class="schermata_winner2" style="display: none;">
+
+    <div class="winner">
+        <p> LEVEL COMPLETE </p>
+    </div>
+
+    <div class="repeat_continue"> <p> CONTINUE? </p> </div>
+
+    <div class="decision">
+        <div class="yes"> <a href="livello5.html"> YES </a> </div>
+        <div class="no"> <a href="home.html"> NO </a> </div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="origin">
+        <div id="pezzo_1" class="draggable" draggable="true" ondragstart="onDragStart(event);"> reset the total</div>
+        <div id="pezzo_3" class="draggable" draggable="true" ondragstart="onDragStart(event);"> show the result</div>
+        <div id="pezzo_2" class="draggable" draggable="true" ondragstart="onDragStart(event);"> repeat: add a number at total as long as there are no other numbers</div>
+    </div>
+    <div class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);"> dropzone </div>
+</div>
+<br>
+<div id="tabella_codice" class="tabella_codici">
+    <p style="font-size: x-large"> CODE : </p>
+    <br>
+</div>
+
+<audio autoplay loop>
+    <source src="./music/Theme_Song.mp3" type="audio/mp3">
+</audio>
+
+<script src="js/Bottone_sugg.js"></script>
+<script src="js/Drag-Drop4.js"></script>
+</body>
+</html>

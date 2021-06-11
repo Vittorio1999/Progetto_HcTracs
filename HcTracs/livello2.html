@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./images/Favicon.ico">
+  <title>Level 2</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="white"/>
+</head>
+<body background="./images/img_1621450247159.jpg">
+
+<h3 class="traccia"> COOK THE PASTA </h3>
+<div id="btsugg" class="bt_sugg"> <a href="#" onclick="show()" ondblclick="hide()">?</a> </div>
+
+<div id="id_suggerimento" class="suggerimento" style="display: none;" onclick="hide()">
+  A programming algorithm is a computer procedure that is a lot like a recipe (called a procedure)
+  and tells your computer precisely what steps to take to solve a problem or reach a goal.
+  The ingredients are called inputs, while the results are called the outputs.
+</div>
+
+<div id='scritta_gameover' class="schermata_gameover" style="display: none;">
+
+  <div class="gameover">
+    <p> GAME OVER </p>
+  </div>
+
+  <div class="repeat_continue"> <p> REPEAT? </p> </div>
+
+  <div class="decision">
+    <div class="yes"> <a href="livello2.html"> YES </a> </div>
+    <div class="no"> <a href="home.html"> NO </a> </div>
+  </div>
+</div>
+
+<div id='scritta_winner' class="schermata_winner" style="display: none;">
+
+  <div class="winner">
+    <p>LEVEL COMPLETE</p>
+  </div>
+
+  <div class="repeat_continue"> <p> CONTINUE? </p> </div>
+
+  <div class="decision">
+    <div class="yes"> <a href="livello3.html"> YES </a> </div>
+    <div class="no"> <a href="home.html"> NO </a> </div>
+  </div>
+</div>
+
+
+
+<div class="parent">
+  <div class="origin">
+    <div id="pezzo_5" class="draggable" draggable="true" ondragstart="onDragStart(event);"> Pour the pasta</div>
+    <div id="pezzo_3" class="draggable" draggable="true" ondragstart="onDragStart(event);"> Turn on the stove</div>
+    <div id="pezzo_1" class="draggable" draggable="true" ondragstart="onDragStart(event);"> Fill the pot with water</div>
+    <div id="pezzo_4" class="draggable" draggable="true" ondragstart="onDragStart(event);"> Wait for the water to boil</div>
+    <div id="pezzo_2" class="draggable" draggable="true" ondragstart="onDragStart(event);"> Put the pot on the hob</div>
+  </div>
+  <div class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);"> dropzone </div>
+</div>
+
+<audio autoplay loop>
+  <source src="./music/Theme_Song.mp3" type="audio/mp3">
+</audio>
+
+<script src="js/Bottone_sugg.js"></script>
+<script src="js/Drag-Drop2.js"></script>
+</body>
+</html>

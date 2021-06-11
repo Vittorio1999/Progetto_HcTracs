@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./images/Favicon.ico">
+    <title>Level 7</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="white"/>
+</head>
+
+
+<body background="./images/img_1621450247159.jpg">
+
+<h3 class="traccia6"> Print the sum of the two number: 9 and 24</h3>
+<div id="btsugg" class="bt_sugg"> <a href="#" onclick="show()" ondblclick="hide()">?</a> </div>
+
+<div id="id_suggerimento" class="suggerimento2" style="display: none;" onclick="hide()">
+    To show somenthing on the screen in c, you can use the printf(). This function take : <br>
+    1. Text between coutation marks;<br>
+    2. Eventualy, a variables to show but in the first argument you need to put the symbol % and the format of the type of the variabiles;
+</div>
+
+<div id='scritta_gameover' class="schermata_gameover2" style="display: none;">
+
+    <div class="gameover">
+        <p> GAME OVER </p>
+    </div>
+
+    <div class="repeat_continue"> <p> REPEAT? </p> </div>
+
+    <div class="decision">
+        <div class="yes"> <a href="livello7.html"> YES </a> </div>
+        <div class="no"> <a href="home.html"> NO </a> </div>
+    </div>
+</div>
+
+<div id='scritta_winner' class="schermata_winner2" style="display: none;">
+
+    <div class="winner">
+        <p> LEVEL COMPLETE </p>
+    </div>
+
+    <div class="repeat_continue"> <p> CONTINUE? </p> </div>
+
+    <div class="decision">
+        <div class="yes"> <a href="livello8.html"> YES </a> </div>
+        <div class="no"> <a href="home.html"> NO </a> </div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="origin">
+        <div id="pezzo_1" class="draggable" draggable="true" ondragstart="onDragStart(event);"> Assign <input type="text" id="n1"/> at variable a </div>
+        <div id="pezzo_3" class="draggable" draggable="true" ondragstart="onDragStart(event);"> Show the result</div>
+        <div id="pezzo_2" class="draggable" draggable="true" ondragstart="onDragStart(event);"> Assign <input type="text" id="n2"/> at variable b</div>
+        <!--<div id="pezzo_4" class="draggable" draggable="true" ondragstart="onDragStart(event);"> pezzo 4</div>-->
+        <!--<div id="pezzo_5" class="draggable" draggable="true" ondragstart="onDragStart(event);"> pezzo 5</div>-->
+    </div>
+    <div class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);"> dropzone </div>
+</div>
+<br>
+<div id="tabella_codice" class="tabella_codici">
+    <p style="font-size: x-large"> CODE : </p>
+    <br>
+</div>
+
+<audio autoplay loop>
+    <source src="./music/Theme_Song.mp3" type="audio/mp3">
+</audio>
+
+<script src="js/Bottone_sugg.js"></script>
+<script src="js/Drag-Drop7.js"></script>
+</body>
+</html>
